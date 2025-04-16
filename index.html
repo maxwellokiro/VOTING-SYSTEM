@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Voting System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Voting System</h1>
+
+    <div id="auth-tabs" class="tabs">
+      <button onclick="showLoginForm()" id="auth-login" class="active">Login</button>
+      <button onclick="showRegisterForm()" id="auth-register">Register</button>
+    </div>
+
+    <div id="dashboard-tabs" class="tabs" style="display: none;">
+      <button onclick="switchTab('vote')" id="tab-vote" class="active">Vote</button>
+      <button onclick="switchTab('register')" id="tab-register">Register</button>
+      <button onclick="switchTab('results')" id="tab-results">Results</button>
+    </div>
+
+    <div id="content">
+      <!-- Content injected by JavaScript -->
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
